@@ -122,3 +122,21 @@ static
 *.*~
 tmp.*
 *.pdf
+example_drf/db.sqlite3
+*.sqlite3
+
+# Ejemplos
+# ignorar todos los archivos que terminen en .log
+## *.log
+
+# excepto production.log
+## !production.log
+
+# ignorar los archivos terminados en .txt dentro de la carpeta doc (pero no sus subdirectorios)
+## doc/*.txt
+
+# ignorar todos los archivos terminados en .pdf dentro de la carpeta doc y sus subdirectorios
+## doc/**/*.pdf
+
+### git update-index --assume-unchanged ruta_al_archivo/nombre_del_archivo
+### git update-index --no-assume-unchanged ruta_al_archivo/nombre_del_archivo
